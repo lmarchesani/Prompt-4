@@ -1,0 +1,7 @@
+The program will prompt the user for input to see what they want to print the entire table or a specific number. It will then throw the user into the switch case to determine what the user input was, and will direct them to the proper case.
+If the user chooses to print the entire table of 1-100, it will direct to case 1. In case 1 it will use a for loop to iterate through 1-100 and pass those values into Holy Roman Empire.
+If the user chooses case 2, it will prompt the user for input to determine what number they want converted. Then it will error check that number and pass it into HolyRomanEmpire.
+If the user chooses case 3, it will do some error checking to make sure the number is formatted correctly, and that it is within the range. After that, it will pass the Roman number into the function so that each element is scanned and given a proper value to be added when it goes through Germania.
+These numbers are then added and printed out.
+HolyRomanEmpire will take the number input to it and convert it to the roman number.
+Germania will pass the values of the elements back into main allowing them to be added.
