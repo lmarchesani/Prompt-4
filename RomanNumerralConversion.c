@@ -8,6 +8,17 @@ int Germania(char c);
 
 int main()
 {
+    //declaration of keys and key test
+    char keyTest[5]={0};
+    printf("Please enter the Password\n");
+    scanf("%s",keyTest);
+    if (strcasecmp(keyTest,"IDF")!=0)
+    {
+        printf("Wrong key!");
+        return 0;
+    }
+
+    system ("cls");
     //variables to store user input
     int userinput;
     //allows the user to either print out a specific number, or an entire table
@@ -21,7 +32,7 @@ int main()
         printf("Invalid Choice?\n");
         return 0;
     }
-
+    system ("cls");
     //breaks up what the user wants to do in accordance with userChoice
     switch (userChoice)
     {   
@@ -29,7 +40,7 @@ int main()
         case 1:
         for(int i=1;i<=100;i++)
         {
-            printf("%i is \t",i);
+            printf("%i is\t",i);
             HolyRomanEmpire(i);
         }
         break;
@@ -66,7 +77,7 @@ int main()
 
         while(roman_Number[i])
             {
-                //will only allow input if it is I,V, X, L, C, D, M
+                //will only allow input if it is I,V, X, L, C,
                 if(Germania(roman_Number[i]) < 0)
                 {
                     printf("Invalid roman number : %c",roman_Number[i]);
@@ -80,7 +91,7 @@ int main()
                         printf("Invalid roman number");
                         return 0;
                     }
-                }
+                } //end error checking
                 //will take the values, pass it into the function and add the values together
                 if(Germania(roman_Number[i]) >= Germania(roman_Number[i+1]))
                 {
@@ -89,7 +100,6 @@ int main()
                 else
                 {
                     number = number + (Germania(roman_Number[i+1]) - Germania(roman_Number[i]));
-
                     i++;
                 }
                 i++;
